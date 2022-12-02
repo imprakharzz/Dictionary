@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictionary</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b88b7777d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <div class="container">
+          <div class="status">
+            <div class="hero"><h1>Dictionary.</h1></div>
+            <div class="input">
+              <input type="text" id="input_" placeholder="Type a Word!" style="font-family:Poppins; font-size: .8rem;">
+              <button id="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+          <div class="cards">
+            <div class="card">
+              <div class="card-info">
+                <div class="word-top">
+                    <h1 class="word" id="word"></h1>
+                    <p id="phonetics"></p>
+                    <i class="fa-solid fa-volume-high" id="audio" style="cursor: pointer; opacity: 0;"></i>
+                </div>
+                <div class="dsc">
+                    <div id="pos"></div>
+                    <div id="def_"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  h1 {
+    color: #151515;
+    font-weight: 700;
+    font-size: 3rem;
+    opacity: 0.8;
+    margin-bottom: 1rem;
+  }
+
+  .hero{
+    font-size: 4rem;
+  }
+
+  h2,
+  p {
+    color: #151515;
+    font-weight: 600;
+    opacity: 0.8;
+  }
+  
+  h3 {
+    color: #151515;
+    font-weight: 600;
+    opacity: 0.8;
+    margin-bottom: 1.2rem;
+  }
+  
+  .word{
+    font-weight: 500;
+  }
+
+  main {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right, #252525 50%, black 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .glass {
+    background: white;
+    min-height: 80vh;
+    width: 60%;
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+  }
+
+  .status {
+    margin-bottom: 3rem;
+    flex-basis: 5%;
+    margin-top: 2.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .status .input{
+    background: linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.3)
+    );
+    border: none;
+    width: 36%;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    position: relative;
+  }
+
+  input{
+    border: none;
+    width: 100%;
+    padding: 0.3rem;
+    background:transparent;
+    outline: none;
+  }
+
+  .status .input #search{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+    cursor: pointer;
+    color: #151515;
+    border: none;
+    background: transparent;
+  }
+  
+  .container {
+    margin-inline: 2.5rem;
+    display: flex;
+    flex:2;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .cards {
+    display: flex;
+    background: linear-gradient(
+      to left top,
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.3)
+    );
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    height: 100%;
+    position: relative;
+    flex-basis: 100%;
+  }
+
+  .word-top{
+    display: flex;
+    gap: 5px;
+    align-items: baseline;
+  }
+
+  @media screen and (max-width:890px){
+    html{
+      font-size: 12px;
+    }
+    .glass{
+      width: 75%;
+      margin-inline: 1.5rem;
+    }
+  }
+
+  @media screen and (max-width:530px){
+    html{
+      font-size: 10px;
+    }
+    .glass{
+      width: 90%;
+      margin-inline: 0.5rem;
+    }
+  }
+  @media screen and (max-width:340px){
+    html{
+      font-size: 8px;
+    }
+  }
